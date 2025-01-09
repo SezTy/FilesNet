@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/System/python.png">
+    <title>FilesNet</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Code de suivi Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y4DL5KB8Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0Y4DL5KB8Z');
+    </script>
+</head>
+<body>
+    <div class="resource">
+        <div class="top-controls">
+            <div class="left-controls">
+                <button onclick="goBack()">
+                    <img src="/System/icoRetour.png" alt="">
+                </button>
+                <button onclick="refileload()">
+                    <img src="/System/icoRetour2.png" alt="">
+                </button>
+                <button onclick="refresh()">
+                    <img src="/System/JSrefresh_icon.png" alt="">
+                </button>
+                <input type="text" id="search" placeholder="Rechercher...">
+                <button onclick="createItem('fichier')">
+                    <img src="/System/icoFichier.png" alt="Fichier">
+                </button>
+                <button onclick="createItem('dossier')">
+                    <img src="/System/IcoDossier.png" alt="Dossier">
+                </button>
+                <button onclick="Stop()" class="red_button">
+                    <img src="/System/icoStop.png" alt="Quitter">
+                </button>
+            </div>
+        </div>
+
+        <ul id="file-list" class="file-list"></ul>
+
+        <div id="editor">
+            <textarea id="file-content" placeholder="Éditez le contenu du fichier ici..."></textarea>
+            <button onclick="saveFile()">Sauvegarder</button>
+        </div>
+        <div class="bar">
+            <div class="bar-fill" id="diskBar"></div>
+        </div>
+        <div>
+            <h6 id="diskBar_t">Utilisation du Disque Principal : 0%</h6>
+
+                <div id="link" align="center">
+                    <h6> <a href="/System/python.html" target="_blank"><img src="/System/python.png" alt="Apprendre Python"></a>
+                        <a href="https://discord.com/channels/1253370383478952007/1306260817775165601" target="_blank"><img src="/System/discord.png" alt="Besoin d'aide ?"></a>
+                    </h6>
+                </div>
+        </div>
+        <img class="qr" onclick="newtab()" src="/System/qr_code.png" alt="">
+    </div>
+    <div class="stop">
+        <div>
+            <img src="/System/IcoEnd.png" alt="FilesNet s'est arrêté correctement">
+        </div>
+        <div class="text-column">
+            <h1>FilesNet s'est arrêté correctement</h1>
+            <h1>Vous pouvez fermer cette page</h1>
+        </div>
+    </div>
+            <script src="script.js"></script>
+</body>
+</html>

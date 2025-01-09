@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/System/python.png">
+    <title>Apprendre le Python</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Apprendre le Python</h1>
+                <button onclick="window.location.href = '/';"  title="Retour">
+                    <img src="/System/icoRetour.png" alt="Retour">
+                </button>
+    <div class="resource">
+        <h2>1. Les Fonctions</h2>
+        <p>Les fonctions en Python sont définies à l'aide du mot-clé <code>def</code>. Elles permettent de regrouper des instructions que vous pouvez appeler plusieurs fois.</p>
+        <pre><code>def ma_fonction(param1, param2):
+    return param1 + param2
+
+resultat = ma_fonction(5, 3)
+print(resultat)  # Affiche 8</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>2. Les Conditions</h2>
+        <p>Les conditions en Python sont gérées par les instructions <code>if</code>, <code>elif</code>, et <code>else</code>.</p>
+        <pre><code>age = 18
+
+if age < 18:
+    print("Vous êtes mineur.")
+elif age == 18:
+    print("Vous êtes majeur.")
+else:
+    print("Vous êtes adulte.")</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>3. Les Boucles</h2>
+        <p>Les boucles permettent d'exécuter un bloc de code plusieurs fois. Les deux types de boucles les plus courants en Python sont <code>for</code> et <code>while</code>.</p>
+        <h3>Boucle <code>for</code></h3>
+        <pre><code>for i in range(5):
+    print(i)  # Affiche 0, 1, 2, 3, 4</code></pre>
+        <h3>Boucle <code>while</code></h3>
+        <pre><code>compteur = 0
+while compteur < 5:
+    print(compteur)
+    compteur += 1  # Incrémente le compteur</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>4. Les Listes</h2>
+        <p>Les listes sont des collections d'éléments. Vous pouvez y accéder par leur index.</p>
+        <pre><code>ma_liste = [1, 2, 3, 4, 5]
+print(ma_liste[0])  # Affiche 1
+ma_liste.append(6)
+print(ma_liste)  # Affiche [1, 2, 3, 4, 5, 6]</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>5. Les Tuples</h2>
+        <p>Les tuples sont des collections d'éléments immuables. Vous pouvez y accéder par leur index.</p>
+        <pre><code>mon_tuple = (1, 2, 3, 4, 5)
+print(mon_tuple[0])  # Affiche 1</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>6. Les Ensembles</h2>
+        <p>Les ensembles sont des collections d'éléments uniques. Vous pouvez y ajouter ou supprimer des éléments.</p>
+        <pre><code>mon_ensemble = {1, 2, 3, 4, 5}
+mon_ensemble .add(6)
+print(mon_ensemble)  # Affiche {1, 2, 3, 4, 5, 6}</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>7. Les Dictionnaires</h2>
+        <p>Les dictionnaires sont des collections de clés-valeurs. Vous pouvez y accéder par leur clé.</p>
+        <pre><code>mon_dictionnaire = {"nom": "Jean", "âge": 30}
+print(mon_dictionnaire["nom"])  # Affiche "Jean"</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>8. Les Fichiers</h2>
+        <p>Vous pouvez lire et écrire des fichiers en Python.</p>
+        <pre><code>fichier = open("mon_fichier.txt", "w")
+fichier.write("Bonjour, monde!")
+fichier.close()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>9. Les Bibliothèques</h2>
+        <p>Les bibliothèques sont des collections de fonctions et de classes qui vous permettent d'accomplir des tâches spécifiques.</p>
+        <pre><code>import math
+print(math.pi)  # Affiche 3.14159265359</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>10. Les Classes et Objet</h2>
+        <p>Les classes et les objets sont des concepts de programmation orientée objet.</p>
+        <pre><code>class Personne:
+    def __init__(self, nom, âge):
+        self.nom = nom
+        self.âge = âge
+
+    def afficher_infos(self):
+        print(f"Nom: {self.nom}, Âge: {self.âge}")
+
+personne = Personne("Jean", 30)
+personne.afficher_infos()  # Affiche "Nom: Jean, Âge: 30"</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>11. Les Fonctions Lambda</h2>
+        <p>Les fonctions lambda sont des fonctions anonymes qui peuvent être définies en une seule ligne.</p>
+        <pre><code>ma_fonction = lambda x, y: x + y
+print(ma_fonction(5, 3))  # Affiche 8</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>12. Les Expressions Régulières</h2>
+        <p>Les expressions régulières sont des motifs qui permettent de rechercher et de manipuler des chaînes de caractères.</p>
+        <pre><code>import re
+print(re.search("Bonjour", "Bonjour, monde!").group())  # Affiche "Bonjour"</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>13. Les Dates et Heures</h2>
+        <p>Les dates et les heures sont gérées par le module <code>datetime</code>.</p>
+        <pre><code>import datetime
+print(datetime.datetime.now())  # Affiche la date et l'heure actuelles</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>14. Les Tests Unitaires</h2>
+        <p>Les tests unitaires sont des tests qui vérifient le fonctionnement de vos fonctions.</p>
+        <pre><code>import unittest
+
+def ma_fonction(x, y):
+    return x + y
+
+class TestMaFonction(unittest.TestCase):
+    def test_ma_fonction(self):
+        self.assertEqual(ma_fonction(5, 3), 8)
+
+if __name__ == "__main__":
+    unittest.main()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>15. Les API et les Requêtes HTTP</h2>
+        <p>Les API et les requêtes HTTP permettent d'interagir avec des services web.</p>
+        <pre><code>import requests
+print(requests.get("https://api.github.com").text)</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>16. Les Bases de Données</h2>
+        <p>Les bases de données sont des systèmes de stockage de données.</p>
+        <pre><code>import sqlite3
+
+connexion = sqlite3.connect("ma_base_de_donnees.db")
+curseur = connexion.cursor()
+curseur.execute("CREATE TABLE IF NOT EXISTS personnes (nom TEXT, âge INTEGER)")
+connexion.commit()
+connexion.close()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>17. Les Graphiques et les Visualisations</h2>
+        <p>Les graphiques et les visualisations permettent de représenter des données de manière visuelle.</p>
+        <pre><code>import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+plt.plot(x, y)
+plt.show()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>18. Le Développement Web</h2>
+        <p>Le développement web est la création de sites web et d'applications web.</p>
+        <pre><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "Bonjour, monde!"
+
+if __name__ == "__main__":
+    app.run()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>19. Le Scripting et l'Automatisation</h2>
+        <p>Le scripting et l'automatisation permettent d'automatiser des tâches répétitives.</p>
+        <pre><code>import os
+
+os.system("mkdir mon_dossier")</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>20. La Gestion des Erreurs</h2>
+        <p>La gestion des erreurs est la gestion des exceptions et des erreurs qui peuvent survenir lors de l'exécution d'un programme.</p>
+        <pre><code>try:
+    x = 5 / 0
+except ZeroDivisionError:
+    print("Erreur: division par zéro!")</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>21. Les Décorateurs</h2>
+        <p>Les décorateurs sont des fonctions qui modifient le comportement d'autres fonctions.</p>
+        <pre><code>def mon_decorateur(fonction):
+    def wrapper():
+        print("Avant l'appel de la fonction")
+        fonction()
+        print("Après l'appel de la fonction")
+    return wrapper
+
+@mon_decorateur
+def ma_fonction():
+    print("Bonjour, monde!")
+
+ma_fonction()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>22. Les Générators</h2>
+        <p>Les générators sont des fonctions qui génèrent des séquences de valeurs.</p>
+        <pre><code>def mon_generateur():
+    for i in range(5):
+        yield i
+
+for valeur in mon_generateur():
+    print(valeur)  # Affiche 0, 1, 2, 3, 4</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>23. Les Async/Await</h2>
+        <p>Les async/await sont des mots-clés qui permettent de programmer de manière asynchrone.</p>
+        <pre><code>import asyncio
+
+async def ma_fonction():
+    await asyncio.sleep(1)
+    print("Bonjour, monde!")
+
+asyncio.run(ma_fonction())</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>24. Les Web Scraping</h2>
+        <p>Le web scraping est la récupération de données à partir de sites web.</p>
+        <pre><code>import requests
+from bs4 import BeautifulSoup
+
+page = requests.get("https://www.example.com")
+soup = BeautifulSoup(page.content, "html.parser")
+
+print(soup.title.text)  # Affiche le titre de la page</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>25. Les Concurrency</h2>
+        <p>La concurrence est la capacité d'un programme à exécuter plusieurs tâches en même temps.</p>
+        <pre><code>import threading
+
+def ma_fonction():
+    print("Bonjour, monde!")
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>26. Les Sockets</h2>
+        <p>Les sockets sont des mécanismes de communication entre des programmes.</p>
+        <pre><code>import socket
+
+socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket.connect(("www.example.com", 80))
+socket.send(b"GET / HTTP/ 1.1\r\nHost: www.example.com\r\n\r\n")
+print(socket.recv(1024))  # Affiche la réponse du serveur</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>27. Les Threads</h2>
+        <p>Les threads sont des unités d'exécution qui peuvent être exécutées en même temps.</p>
+        <pre><code>import threading
+
+def ma_fonction():
+    print("Bonjour, monde!")
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>28. Les Processus</h2>
+        <p>Les processus sont des unités d'exécution qui peuvent être exécutées en même temps.</p>
+        <pre><code>import multiprocessing
+
+def ma_fonction():
+    print("Bonjour, monde!")
+
+process = multiprocessing.Process(target=ma_fonction)
+process.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>29. Les Queue</h2>
+        <p>Les queues sont des structures de données qui permettent de stocker des éléments dans l'ordre de leur arrivée.</p>
+        <pre><code>import queue
+
+ma_queue = queue.Queue()
+
+ma_queue.put("élément 1")
+ma_queue.put("élément 2")
+
+print(ma_queue.get())  # Affiche "élément 1"
+print(ma_queue.get())  # Affiche "élément 2"</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>30. Les Locks</h2>
+        <p>Les locks sont des mécanismes de synchronisation qui permettent de protéger des ressources partagées.</p>
+        <pre><code>import threading
+
+lock = threading.Lock()
+
+def ma_fonction():
+    with lock:
+        print("Bonjour, monde!")
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>31. Les Semaphores</h2>
+        <p>Les semaphores sont des mécanismes de synchronisation qui permettent de contrôler l'accès à des ressources partagées.</p>
+        <pre><code>import threading
+
+semaphore = threading.Semaphore(5)
+
+def ma_fonction():
+    semaphore.acquire()
+    print("Bonjour, monde!")
+    semaphore.release()
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>32. Les Conditions</h2>
+        <p>Les conditions sont des mécanismes de synchronisation qui permettent de coordonner l'exécution de plusieurs threads.</p>
+        <pre><code>import threading
+
+condition = threading.Condition()
+
+def ma_fonction():
+    with condition:
+        condition.wait()
+        print("Bonjour, monde!")
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()
+
+with condition:
+    condition.notify_all()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>33. Les Events</h2>
+        <p>Les events sont des mécanismes de synchronisation qui permettent de signaler des événements à d'autres threads.</p>
+        <pre><code>import threading
+
+event = threading.Event()
+
+def ma_fonction():
+    event.wait()
+    print("Bonjour, monde!")
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()
+
+event.set()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>34. Les Timers</h2>
+        <p>Les timers sont des mécanismes qui permettent de planifier l'exécution de fonctions à des moments spécifiques.</p>
+        <pre><code>import threading
+
+def ma_fonction():
+    print("Bonjour, monde!")
+
+timer = threading.Timer(5.0, ma_fonction)
+timer.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>35. Les Local</h2>
+        <p>Les locals sont des mécanismes qui permettent de stocker des données spécifiques à un thread.</p>
+        <pre><code>import threading
+
+local = threading.local()
+
+def ma_fonction():
+    local.data = "Bonjour, monde!"
+    print(local.data)
+
+thread = threading.Thread(target=ma_fonction)
+thread.start()</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>36. Les Context Managers </h2>
+        <p>Les context managers sont des mécanismes qui permettent de gérer les ressources système.</p>
+        <pre><code>import contextlib
+
+@contextlib.contextmanager
+def ma_fonction():
+    print("Avant l'appel de la fonction")
+    yield
+    print("Après l'appel de la fonction")
+
+with ma_fonction():
+    print("Bonjour, monde!")</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>37. Les Descriptors</h2>
+        <p>Les descriptors sont des mécanismes qui permettent de définir des propriétés pour les objets.</p>
+        <pre><code>class MaClasse:
+    def __init__(self, valeur):
+        self.valeur = valeur
+
+    def __get__(self, instance, owner):
+        return self.valeur
+
+    def __set__(self, instance, valeur):
+        self.valeur = valeur
+
+class MaAutreClasse:
+    ma_propriete = MaClasse("Bonjour, monde!")
+
+objet = MaAutreClasse()
+print(objet.ma_propriete)  # Affiche "Bonjour, monde!"
+objet.ma_propriete = "Au revoir, monde!"
+print(objet.ma_propriete)  # Affiche "Au revoir, monde!"</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>38. Les Métaclasses</h2>
+        <p>Les métaclasses sont des mécanismes qui permettent de définir des classes à l'exécution.</p>
+        <pre><code>class MaMetaclasse(type):
+    def __new__(meta, nom, bases, dct):
+        print(f"Création de la classe {nom}")
+        return super().__new__(meta, nom, bases, dct)
+
+class MaClasse(metaclass=MaMetaclasse):
+    pass
+
+print(MaClasse)  # Affiche la classe créée</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>39. Les Abstract Base Classes</h2>
+        <p>Les abstract base classes sont des mécanismes qui permettent de définir des classes abstraites.</p>
+        <pre><code>from abc import ABC, abstractmethod
+
+class MaClasseAbstraite(ABC):
+    @abstractmethod
+    def ma_methode(self):
+        pass
+
+class MaClasseConcrète(MaClasseAbstraite):
+    def ma_methode(self):
+        print("Bonjour, monde!")
+
+objet = MaClasseConcrète()
+objet.ma_methode()  # Affiche "Bonjour, monde!"</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>40. Les Dataclasses</h2>
+        <p>Les dataclasses sont des mécanismes qui permettent de définir des classes de données.</p>
+        <pre><code>from dataclasses import dataclass
+
+@dataclass
+class MaClasse:
+    nom: str
+    âge: int
+
+objet = MaClasse("Jean", 30)
+print(objet.nom)  # Affiche "Jean"
+print(objet.âge)  # Affiche 30</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>41. Les Enums</h2>
+        <p>Les enums sont des mécanismes qui permettent de définir des énumérations.</p>
+        <pre><code>from enum import Enum
+
+class MaEnum(Enum):
+    Vrai = 1
+    Faux = 0
+
+print(MaEnum.Vrai)  # Affiche MaEnum.Vrai</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>42. Les Pathlib</h2>
+        <p>Les pathlib sont des mécanismes qui permettent de manipuler des chemins de fichiers.</p>
+        <pre><code>import pathlib
+
+chemin = pathlib.Path("mon_fichier.txt")
+print(chemin.exists())  # Affiche True si le fichier existe</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>43. Les Typing</h2>
+        <p>Les typing sont des mécanismes qui permettent de définir des types pour les variables et les fonctions.</p>
+        <pre><code>from typing import List
+
+def ma_fonction(param: List[int]) -> int:
+    return sum(param)
+
+print(ma_fonction([1, 2, 3, 4, 5]))  # Aff iche 15</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>44. Les Contextlib</h2>
+        <p>Les contextlib sont des mécanismes qui permettent de gérer les ressources système.</p>
+        <pre><code>import contextlib
+
+@contextlib.contextmanager
+def ma_fonction():
+    print("Avant l'appel de la fonction")
+    yield
+    print("Après l'appel de la fonction")
+
+with ma_fonction():
+    print("Bonjour, monde!")</code></pre>
+    </div>
+
+    <div class="resource">
+        <h2>45. Les Functools</h2>
+        <p>Les functools sont des mécanismes qui permettent de définir des fonctions de haut niveau.</p>
+        <pre><code>import functools
+
+def ma_fonction(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        print("Avant l'appel de la fonction")
+        result = func(*args, **kwargs)
+        print("Après l'appel de la fonction")
+        return result
+    return wrapper
+
+@ma_fonction
+def ma_autre_fonction():
+    print("Bonjour, monde!")
+
+ma_autre_fonction()</code></pre>
+    </div>
+
+</body>
+</html>
