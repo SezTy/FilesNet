@@ -15,8 +15,7 @@
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25" width="100%" />
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25&reversal=true" width="100%" />
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25" width="100%" style="margin-bottom:-8px"/><img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25&reversal=true" width="100%" style="margin-top:-8px"/></p>
 
 ## À propos
 
@@ -50,8 +49,7 @@ Pas d'installation lourde, pas de configuration réseau complexe : tu lances l'a
 
 ## Installation
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25" width="100%" />
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25&reversal=true" width="100%" />
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25" width="100%" style="margin-bottom:-8px"/><img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25&reversal=true" width="100%" style="margin-top:-8px"/></p>
 
 ```bash
 # Cloner le dépôt
@@ -74,8 +72,7 @@ FilesNet/FilesNet.bat
 3. Scanne le QR Code généré ou entre l'adresse IP affichée depuis un autre appareil du réseau
 4. Navigue, télécharge, édite ou partage tes fichiers depuis le navigateur
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25" width="100%" />
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25&reversal=true" width="100%" />
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25" width="100%" style="margin-bottom:-8px"/><img src="https://capsule-render.vercel.app/api?type=waving&color=2F81F7&height=100&width=100%25&reversal=true" width="100%" style="margin-top:-8px"/></p>
 
 ## Licence
 
