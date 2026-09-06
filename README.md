@@ -1,3 +1,12 @@
+<details open>
+<summary><h2>⚠️ Ce dépôt n'est plus à jour — le logiciel n'est actuellement pas fonctionnel</h2></summary>
+
+Ce projet n'est plus maintenu activement. Le code disponible ici peut être obsolète, incomplet ou contenir des bugs bloquants empêchant son bon fonctionnement.
+
+Utilise-le à tes risques et périls, et n'hésite pas à consulter les issues ou à proposer une correction via une pull request.
+
+</details>
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:2c5364,100:2F81F7&height=200&section=header&text=FilesNet&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Partage%20de%20fichiers%20local%20en%20un%20clic&descAlignY=55&descSize=18" width="100%" />
