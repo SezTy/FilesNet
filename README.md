@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:2c5364,100:2F81F7&height=200&section=header&text=FilesNet&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Partage%20de%20fichiers%20local%20en%20un%20clic&descAlignY=55&descSize=18" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=2F81F7&center=true&vCenter=true&width=550&lines=Serveur+de+fichiers+local+en+quelques+secondes;Accessible+depuis+n'importe+quel+appareil+du+r%C3%A9seau;Simple%2C+rapide%2C+sans+configuration" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=2F81F7&center=true&vCenter=true&width=550&lines=Serveur+de+fichiers+local+en+quelques+secondes;Accessible+depuis+n'importe+quel+appareil+du+r%C3%A9seau;Simple%2C+rapide%2C+sans+configuration" alt="Typing SVG" />
 
 <br/>
 
